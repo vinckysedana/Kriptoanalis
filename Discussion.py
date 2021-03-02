@@ -5,12 +5,10 @@ def prima(num):
             if (num % i) == 0:
                 print(num, "bukan bilangan prima\n\n")
                 break
-            else:
-                print(num,"adalah bilangan prima\n\n")
-                break
+        else:
+            print(num,"adalah bilangan prima\n\n")
     else:
         print(num, "bukan bilangan prima\n\n")
-    return 0
 
 #Program mencari nilai faktorial
 def faktorial(f):
