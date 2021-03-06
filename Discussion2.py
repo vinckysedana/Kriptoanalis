@@ -1,6 +1,6 @@
 #membuat file txt
 def buat_file():
-    file = (input("Masukkan nama file : "))
+    file = (input("Masukkan Nama File : "))
     teks = (input("Masukkan Kalimat : "))
     file2 = open(file+'.txt', "w")
     file2.write(teks)
@@ -8,8 +8,8 @@ def buat_file():
     
 #membaca file txt
 def baca_file():
-    baca = (input("Masukkan nama file : "))
-    file = open(baca, "r")
+    baca = (input("Masukkan Nama File : "))
+    file = open(baca+'.txt', "r")
     baca2 = file.read()
     print(baca2)
     file.close()
@@ -22,7 +22,7 @@ def hitung_kata1():
 
 def hitung_kata2():
     masukkan_kata = input('Masukkan Nama File : ')
-    file = open(masukkan_kata, "r")
+    file = open(masukkan_kata+'txt', "r")
     baca = file.read()
     print(baca)
     cari_kata = input('Masukkan Kata atau Huruf: ')
